@@ -6,6 +6,19 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ListaCamionesPage } from '../pages/lista-camiones/lista-camiones';
+import { ComentariosPage } from '../pages/comentarios/comentarios';
+import { FavoritosPage } from '../pages/favoritos/favoritos';
+import { HistorialPage } from '../pages/historial/historial';
+import { ConfiguracionPage } from '../pages/configuracion/configuracion';
+import { PremiumPage } from '../pages/premium/premium';
+
+import { LineaAmarillaPage } from '../pages/linea-amarilla/linea-amarilla';
+import { LineaAzulPage } from '../pages/linea-azul/linea-azul';
+import { LineaCafePage } from '../pages/linea-cafe/linea-cafe';
+import { LineaRojaPage } from '../pages/linea-roja/linea-roja';
+import { LineaVerdePage } from '../pages/linea-verde/linea-verde';
+
 
 import { Geolocation } from '@ionic-native/geolocation';
 import { GoogleMaps, GoogleMapsEvent, GoogleMapOptions } from '@ionic-native/google-maps';
@@ -23,7 +36,18 @@ export const firebaseConfig={};
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    ListaCamionesPage,
+    ComentariosPage,
+    FavoritosPage,
+    HistorialPage,
+    ConfiguracionPage,
+    PremiumPage,
+    LineaAmarillaPage,
+    LineaAzulPage,
+    LineaCafePage,
+    LineaRojaPage,
+    LineaVerdePage 
   ],
   imports: [
     BrowserModule,
@@ -34,7 +58,18 @@ export const firebaseConfig={};
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    ListaCamionesPage,
+    ComentariosPage,
+    FavoritosPage,
+    HistorialPage,
+    ConfiguracionPage,
+    PremiumPage,
+    LineaAmarillaPage,
+    LineaAzulPage,
+    LineaCafePage,
+    LineaRojaPage,
+    LineaVerdePage 
   ],
   providers: [
     StatusBar,
