@@ -54,10 +54,4 @@ switch(pag){
 
 }
   
-
-  ClosePage(){
-    this.navCtrl.pop();
-    this.menuCtrl.close();
-  }
-
 }

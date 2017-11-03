@@ -7,12 +7,43 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>LineaAzul</ion-title>
+    <ion-title>Linea Azul</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+	<ion-list>
+
+      <button ion-item (click)="MostrarKML('5a')"> Línea 5A
+      </button>
+
+      <button ion-item (click)="MostrarKML(uni)">
+        Línea Universitaria
+      </button>
+
+      <button ion-item (click)="MostrarKML(vallet)">
+        Valle de Juárez - Tierra Nueva
+      </button>
+
+      <button ion-item (click)="MostrarKML(valler)">
+        Valle de Juárez - Riveras
+      </button>
+
+      <button ion-item (click)="MostrarKML(ps)">
+        Poniente Sur
+      </button>
+
+      <button ion-item (click)="MostrarKML(ja)">
+        Juárez Aeropuerto
+      </button>
+
+      <button ion-item menuToggle>
+        Salir
+      </button>
+
+    </ion-list>
 
 </ion-content>

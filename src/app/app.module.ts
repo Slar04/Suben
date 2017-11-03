@@ -1,11 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
+import { NavController } from 'ionic-angular';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+
 import { ListaCamionesPage } from '../pages/lista-camiones/lista-camiones';
 import { ComentariosPage } from '../pages/comentarios/comentarios';
 import { FavoritosPage } from '../pages/favoritos/favoritos';
@@ -47,7 +49,7 @@ export const firebaseConfig={};
     LineaAzulPage,
     LineaCafePage,
     LineaRojaPage,
-    LineaVerdePage 
+    LineaVerdePage, 
   ],
   imports: [
     BrowserModule,
@@ -76,7 +78,13 @@ export const firebaseConfig={};
     SplashScreen,
     Geolocation,
     GoogleMaps,
-    Firebase,
+    Firebase,/*
+    HomePage,
+    LineaAmarillaPage,
+    LineaAzulPage,
+    LineaCafePage,
+    LineaRojaPage,
+    LineaVerdePage,*/
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
